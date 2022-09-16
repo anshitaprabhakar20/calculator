@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom,#6495ED,#40E0D0,#CCCCFF);
+}
+#main #container{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+}
+#h1{
+    position: absolute;
+    top: -25%;
+    left: 22%;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    font-family: "Gilroy";
+    font-weight: bolder;
+    background-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+#main #container #display{
+    position: relative;
+    width: 100%;
+    height: 23%;
+    display: flex;
+    color: black;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 13px;
+ }
+#main #container #display .previous-operand{
+  font-size: 1.5rem;  
+  /* 1.5rem=24px */
+}
+#main #container #display .current-operand{
+    font-size: 2.5rem;
+    /* 2.5rem(root element)=40px */
+  } 
+#main #container #display .temp_result{
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      opacity: .8;
+      font-size: 1.5rem;
+  } 
+#main #container  #buttons{
+    padding: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+#main #container  #buttons button{
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.equal{
+    background-color: rgba(98, 98, 254, 0.742);
+}
+.operation{
+    background-color: rgba(152, 251, 152, 0.804);
+}
+button:hover{
+    background-color: rgba(0, 255, 255, 0.696);
+}
+.number{
+    background-color: rgb(202, 237, 250);
+}
+.allclear{
+    background-color: #6495ED;
+}
+.delete{
+    background-color: #00808098;
+}
+#toggle{
+    position: absolute;
+    width: 45px;
+    height: 20px;
+    border-radius: 20px;
+    top: 2%;
+    left: 2%;
+    background-color: rgba(128, 128, 128, 0.856);
+}
+#toggle #cir{
+    position: absolute;
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
